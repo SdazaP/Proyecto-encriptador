@@ -34,8 +34,7 @@
 }
 
 .texto .input-text{
-    border: .5;
-    border-color: #5F506B;
+    border: 0;
     height: 70%;
     width: 90%;
     font-size: 1.5em;
@@ -73,6 +72,10 @@
     font-size: 1.1em;
     border: none;
     border-radius: 5px;
+}
+
+.texto .en:hover, .des:hover{
+    scale: 1.2;
 }
 
 .texto .en{
