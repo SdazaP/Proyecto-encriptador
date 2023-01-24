@@ -21,6 +21,7 @@ function desencriptar(text) {
     des = des.replaceAll("ufat","u");
     console.log(des);
     document.getElementById("p").innerHTML = des;
+    cambio();
 }
 
 function textoEn(){
@@ -38,7 +39,7 @@ function textoDes(){
     if (text == ""){
         alert("Escribe algo")
     }else{
-        if(text =! document.getElementById("entradatexto").value){
+        if(text != document.getElementById("p").value){
             desencriptar(text);
         }
         
