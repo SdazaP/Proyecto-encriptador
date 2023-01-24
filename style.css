@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .bas{
     font-family: 'Roboto', sans-serif;
 }
@@ -31,7 +34,8 @@
 }
 
 .texto .input-text{
-    border: 0;
+    border: .5;
+    border-color: #5F506B;
     height: 70%;
     width: 90%;
     font-size: 1.5em;
@@ -67,9 +71,16 @@
     color: white;
     padding: 10px 10px;
     font-size: 1.1em;
-    background: #5F506B;
     border: none;
     border-radius: 5px;
+}
+
+.texto .en{
+    background: #1D1E2C;
+}
+
+.texto .des{
+    background: #5F506B;
 }
 
 .botones .encritar, .desencriptar{
@@ -125,4 +136,69 @@
 
 .texto-traducido-after p{
     padding: 0 2em;
+}
+
+/* RESPONSIVE  */
+
+@media (max-width: 768px){
+    .base{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .texto {
+        margin: 0 auto;
+        height: 70%;
+        width: 80%;
+    }
+
+    .texto-traducido-before{
+        height: 10%;
+        width: 80%;
+    }
+
+    .texto-traducido-before img{
+        display: none;
+    }
+
+    .texto-traducido-before h1{
+        margin: .5em 0;
+    }
+}
+
+@media (max-width: 710px){
+    .texto .en, .des{
+        padding: 10px 5px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    .base{
+        width: 100%;
+    }
+    .texto {
+        height: 70%;
+        width: 80%;
+    }
+    .texto .input-text{
+        height: 50%;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .botones{
+        width: 100%;
+    }
+    .texto .en, .des{
+        margin: .5em;
+        color: white;
+        width: 100%;
+    }
+
+    .texto-traducido-before{
+        height: 40%;
+    }
 }
