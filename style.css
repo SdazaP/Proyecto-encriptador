@@ -1,0 +1,128 @@
+.bas{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh;
+    padding-left: 1em;
+    background: #C6DBF0;
+}
+
+
+.base{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    background-color: #C6DBF0;
+    display:flex;
+    align-items: center;
+}
+
+.texto{
+    margin: 6em ;
+    margin-top: 0em;
+    margin-bottom: 0;
+    width: 50%;
+    height: 80%;
+    text-align: center;
+}
+
+.texto .input-text{
+    border: 0;
+    height: 70%;
+    width: 90%;
+    font-size: 1.5em;
+    background: #C6DBF0;
+    padding: 0;
+    text-align: center;
+}
+
+.texto .alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.texto p{
+    font-size: 10px;
+    justify-content: start;
+}
+
+.alerta img{
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.texto .botones{
+    text-align:center;
+}
+
+.texto .en, .des{
+    margin: 0 2em;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    background: #5F506B;
+    border: none;
+    border-radius: 5px;
+}
+
+.botones .encritar, .desencriptar{
+    margin: 0 auto;
+}
+
+.texto-traducido-before{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+    width: 30%;
+    height: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background: white;
+    border-radius: 40px;
+}
+
+.texto-traducido-before img{
+    width: 60%;
+}
+
+.texto-traducido-before h1{
+    font-weight: bold;
+    margin: 1em 0;
+}
+.texto-traducido-before p{
+    padding: 0 1em;
+}
+
+.texto-traducido-after{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+}
+
+.texto-traducido-after .cop{
+    height: 2.5em;
+    margin: 0 2em;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    background: #5F506B;
+    border: none;
+    border-radius: 5px;
+}
+
+.texto-traducido-after p{
+    padding: 0 2em;
+}
