@@ -26,20 +26,19 @@
                 <p>Solo letras minusculas y sin acentos</p>
             </div>
             <div class="botones">
-                <input type="button" value="Encriptar" class="en">
-                <input type="button" value="Desencriptar" class="des">
+                <input type="button" value="Encriptar" class="en" onclick="textoEn()">
+                <input type="button" value="Desencriptar" class="des" onclick="textoDes()">
             </div>
         </div>
     
-        <div class="texto-traducido-before">
+        <div class="texto-traducido-before" id="txtb">
             <img src="images/Muñeco.png" alt="">
             <h1>Ningún mensaje fue encontrado</h1>
             <p>Ingresa el texto que desees encriptar o desencriptar</p>
         </div>
     
-        <div class="texto-traducido-after">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam quo laborum. Iure aliquid dicta voluptatibus minus quas eveniet placeat nobis molestiae corporis modi, odit labore praesentium dolorem nam tenetur.
+        <div class="texto-traducido-after" id="txta">
+            <p id="p">
             </p>
             <input type="button" value="Copiar" class="cop">
         </div>

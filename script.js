@@ -1,43 +1,41 @@
-/* let texten = "feliz martes campeon";
-fenterlimesz mairtenters caimpenterobern
-pelicula de acción 
-    penterlimescufatlai denter aiccimesobern
-pelele penterlenterlenter
-
-let en = texten.replaceAll("e","enter");
-en = en.replaceAll("i","imes");
-en = en.replaceAll("a","ai");
-en = en.replaceAll("o","ober");
-en = en.replaceAll("u","ufat");
-console.log(en); */
-
-/* let textdes = "fenterlimesz mairtenters caimpenterobern";
-
-let des = textdes.replaceAll("enter","e");
-des = des.replaceAll("imes","i");
-des = des.replaceAll("ai","a");
-des = des.replaceAll("ober","o");
-des = des.replaceAll("ufat","u");
-console.log(des); */
-
 function encriptar(text) {
     let texten = text;
-    let en = texten.replaceAll("e","enter");
+    let en;
+    en = texten.replaceAll("e","enter");
     en = en.replaceAll("i","imes");
     en = en.replaceAll("a","ai");
     en = en.replaceAll("o","ober");
     en = en.replaceAll("u","ufat");
     console.log(en);
+    document.getElementById("p").innerHTML = en;
+    cambio();
 }
 
 function desencriptar(text) {
     let texdes = text;
-    let des = texdes.replaceAll("enter","e");
+    let des;
+    des = texdes.replaceAll("enter","e");
     des = des.replaceAll("imes","i");
     des = des.replaceAll("ai","a");
     des = des.replaceAll("ober","o");
     des = des.replaceAll("ufat","u");
     console.log(des);
+    document.getElementById("p").innerHTML = des;
 }
 
-desencriptar("fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!");
+function textoEn(){
+    let text = document.getElementById("entradatexto").value;
+    encriptar(text);
+}
+
+function textoDes(){
+    let text = document.getElementById("entradatexto").value;
+    desencriptar(text);
+}
+
+function cambio(){
+    let oc = document.getElementById("txtb");
+    oc.style.display = "none";
+    let cam = document.getElementById("txta");
+    cam.style.display = "flex";
+}

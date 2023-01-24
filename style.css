@@ -75,6 +75,7 @@
 }
 
 .texto .en:hover, .des:hover{
+    cursor: pointer;
     scale: 1.2;
 }
 
