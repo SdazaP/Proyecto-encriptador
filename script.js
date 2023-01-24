@@ -25,12 +25,25 @@ function desencriptar(text) {
 
 function textoEn(){
     let text = document.getElementById("entradatexto").value;
-    encriptar(text);
+    if (text == ""){
+        alert("Escribe algo")
+    }else{
+        encriptar(text);
+    }
+    
 }
 
 function textoDes(){
     let text = document.getElementById("entradatexto").value;
-    desencriptar(text);
+    if (text == ""){
+        alert("Escribe algo")
+    }else{
+        if(text =! document.getElementById("entradatexto").value){
+            desencriptar(text);
+        }
+        
+    }
+    
 }
 
 function cambio(){
