@@ -145,11 +145,16 @@
     scale: 1.2;
 }
 
-.texto-traducido-after p{
+.texto-traducido-after #p{
     padding: 0 2em;
     height: 80%;
     width: 85%;
-    overflow: scroll;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    color: #495057;
 }
 
 /* RESPONSIVE  */

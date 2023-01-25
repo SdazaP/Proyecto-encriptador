@@ -39,9 +39,7 @@ function textoDes(){
     if (text == ""){
         alert("Escribe algo")
     }else{
-        if(text != document.getElementById("p").value){
-            desencriptar(text);
-        }
+        desencriptar(text);
         
     }
     
@@ -52,4 +50,10 @@ function cambio(){
     oc.style.display = "none";
     let cam = document.getElementById("txta");
     cam.style.display = "flex";
+}
+
+function copy(){
+    let copiar = document.querySelector("#p");
+    navigator.clipboard.writeText(copiar.value);
+    console.log(copiar.value)
 }
